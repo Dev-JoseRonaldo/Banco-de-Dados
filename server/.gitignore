@@ -1,0 +1,15 @@
+# Ignorar arquivos de build
+/build/
+
+# Ignorar arquivos temporários do editor (Visual Studio Code, por exemplo)
+.vscode/
+
+# Ignorar arquivos gerados pelo CMake
+CMakeCache.txt
+CMakeFiles/
+Makefile
+*.cmake
+*.swp
+
+# Ignorar arquivos binários do projeto
+server
