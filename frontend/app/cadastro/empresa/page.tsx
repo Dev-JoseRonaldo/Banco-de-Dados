@@ -1,5 +1,3 @@
-// app/cadastro/empresa/page.tsx
-
 "use client";
 
 import { useRouter } from 'next/navigation';

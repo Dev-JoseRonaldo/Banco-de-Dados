@@ -1,5 +1,3 @@
-// app/cadastro/professor/page.tsx
-
 "use client";
 
 import { useRouter } from 'next/navigation';
