@@ -2,6 +2,7 @@
 
 import Header from "@/components/Header";
 import { useRouter } from "next/navigation";
+import StudentCard from "@/components/StudentCard";
 
 export default function HomeEmpresa() {
   const router = useRouter();
@@ -14,6 +15,8 @@ export default function HomeEmpresa() {
       anoMatricula: 2021,
       mediaGeral: 8.7,
       endereco: "Rua das Flores, 123, Bairro Primavera",
+      email: "joao.silva@example.com",
+      curriculo: "https://link-to-curriculo.com/joao-silva",
     },
     {
       nome: "Maria Oliveira",
@@ -22,6 +25,8 @@ export default function HomeEmpresa() {
       anoMatricula: 2020,
       mediaGeral: 9.0,
       endereco: "Avenida Central, 456, Centro",
+      email: "maria.oliveira@example.com",
+      curriculo: "https://link-to-curriculo.com/maria-oliveira",
     },
     {
       nome: "Carlos Souza",
@@ -30,6 +35,8 @@ export default function HomeEmpresa() {
       anoMatricula: 2019,
       mediaGeral: 7.8,
       endereco: "Travessa dos Andes, 789, Jardim Nova Era",
+      email: "carlos.souza@example.com",
+      curriculo: "https://link-to-curriculo.com/carlos-souza",
     },
     {
       nome: "Ana Costa",
@@ -38,9 +45,11 @@ export default function HomeEmpresa() {
       anoMatricula: 2022,
       mediaGeral: 8.3,
       endereco: "Rua do Sol, 321, Bairro Alto",
+      email: "ana.costa@example.com",
+      curriculo: "https://link-to-curriculo.com/ana-costa",
     },
   ];
-  
+
   return (
     <div className="min-h-screen bg-[#f9fafb] text-black">
       <Header user="Empresa" />
@@ -48,14 +57,17 @@ export default function HomeEmpresa() {
         <h2 className="text-4xl font-bold mb-4">Alunos Disponíveis</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {students.map((student, index) => (
-            <div key={index} className="bg-white p-6 rounded-xl shadow-md">
-              <h3 className="text-2xl font-bold">{student.nome}</h3>
-              <p className="text-gray-700">Curso: {student.curso}</p>
-              <p className="text-gray-600">Idade: {student.idade}</p>
-              <p className="text-gray-600">Ano de Matrícula: {student.anoMatricula}</p>
-              <p className="text-gray-600">Endereço: {student.endereco}</p>
-              <p className="font-semibold text-green-600">Média Geral: {student.mediaGeral}</p>
-            </div>
+            <StudentCard
+              key={index}
+              nome={student.nome}
+              idade={student.idade}
+              curso={student.curso}
+              anoMatricula={student.anoMatricula}
+              mediaGeral={student.mediaGeral}
+              endereco={student.endereco}
+              email={student.email}
+              curriculo={student.curriculo}
+            />
           ))}
         </div>
         <button
