@@ -11,12 +11,21 @@ find_package(OpenSSL REQUIRED)
 # Diretórios de inclusão
 include_directories(${CMAKE_SOURCE_DIR}/src)
 include_directories(${CMAKE_SOURCE_DIR}/src/vaga)
-include_directories(${CMAKE_SOURCE_DIR}/src/handlers)
+include_directories(${CMAKE_SOURCE_DIR}/src/empresa)
+include_directories(${CMAKE_SOURCE_DIR}/src/pessoa)
+include_directories(${CMAKE_SOURCE_DIR}/src/usuario)
+include_directories(${CMAKE_SOURCE_DIR}/src/professor)
+include_directories(${CMAKE_SOURCE_DIR}/src/aluno)
 
 # Arquivos fontes
 set(SOURCES
     src/main.cpp
     src/vaga/Vaga.cpp
+    src/empresa/Empresa.cpp
+    src/aluno/Aluno.cpp
+    src/professor/Professor.cpp
+    src/pessoa/Pessoa.cpp
+    src/usuario/Usuario.cpp
     src/handlers/VagaHandlers.cpp
 )
 
