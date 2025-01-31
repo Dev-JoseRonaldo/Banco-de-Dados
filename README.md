@@ -1,5 +1,29 @@
 # LKCIn
 
+![Imagem 1](https://res.cloudinary.com/devjoseronaldo/image/upload/v1738340596/EDOO/ebr4wmmw3wonj4tabgop.png)
+<br><br>
+![Imagem 2](https://res.cloudinary.com/devjoseronaldo/image/upload/v1738340597/EDOO/wcuabqcdzqdd2n8x0vcr.png)
+<br><br>
+![Imagem 3](https://res.cloudinary.com/devjoseronaldo/image/upload/v1738340597/EDOO/xakekg7vczdhefzsxcmq.png)
+<br><br>
+![Imagem 4](https://res.cloudinary.com/devjoseronaldo/image/upload/v1738340596/EDOO/luiefronj46t3bea2ijk.png)
+<br><br>
+![Imagem 5](https://res.cloudinary.com/devjoseronaldo/image/upload/v1738340597/EDOO/oj8tj799rwvasnhczrak.png)
+<br><br>
+![Imagem 6](https://res.cloudinary.com/devjoseronaldo/image/upload/v1738340597/EDOO/aqchr8txxsmecdzh5f9q.png)
+<br><br>
+![Imagem 7](https://res.cloudinary.com/devjoseronaldo/image/upload/v1738340597/EDOO/zzskskpoksub4mwgvshu.png)
+<br><br>
+![Imagem 8](https://res.cloudinary.com/devjoseronaldo/image/upload/v1738340597/EDOO/xpc1hy2fpftsiajx8vvz.png)
+<br><br>
+![Imagem 9](https://res.cloudinary.com/devjoseronaldo/image/upload/v1738340597/EDOO/tcjvggduoahzrsfq64fq.png)
+<br><br>
+![Imagem 10](https://res.cloudinary.com/devjoseronaldo/image/upload/v1738340597/EDOO/us6iw51gnkzmamvqa6ax.png)
+
+
+
+
+
 ## 💻 Projeto
 Projeto da disciplina ***Banco de Dados***, da graduação em [Sistemas de Informação (SI)](https://portal.cin.ufpe.br/graduacao/sistemas-de-informacao/) do [Centro de Informática (CIN)](https://portal.cin.ufpe.br/) da [Universidade Federal de Pernambuco (UFPE)](https://www.ufpe.br/), cursada em no letivo 2024.1
 <br>
