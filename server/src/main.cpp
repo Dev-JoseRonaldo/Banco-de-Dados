@@ -20,6 +20,17 @@ int main() {
         }
     });
 
+    listener.support(methods::OPTIONS, [](const http_request& request) {
+        if (request.relative_uri().path() == U("/vaga")) {
+        http_response response(status_codes::OK);
+        response.headers().add(U("Access-Control-Allow-Origin"), U("http://localhost:3000")); // Or specify origin
+        response.headers().add(U("Access-Control-Allow-Methods"), U("POST, OPTIONS")); // Add other methods as needed
+        response.headers().add(U("Access-Control-Allow-Headers"), U("Content-Type")); // Add other headers your app uses
+        request.reply(response);
+        return;
+        }
+    });
+
     // Rota para listar todas as vagas
     listener.support(methods::GET, [](const http_request& request) {
         if (request.relative_uri().path() == U("/vaga")) {
