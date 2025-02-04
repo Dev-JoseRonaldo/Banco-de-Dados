@@ -6,7 +6,6 @@ import { useRouter } from 'next/navigation';
 export default function Login() {
   const [usuario, setUsuario] = useState("");
   const [senha, setSenha] = useState("");
-  const [tipoUsuario, setTipoUsuario] = useState("");
   const router = useRouter();
 
   const handleCadastroClick = () => {
@@ -16,13 +15,10 @@ export default function Login() {
   const handleLogin = () => {
     if (usuario && senha) {
       if (usuario === "aluno") {
-        setTipoUsuario("aluno");
         router.push('/home/aluno');
       } else if (usuario === "professor") {
-        setTipoUsuario("professor");
         router.push('/home/professor');
       } else if (usuario === "empresa") {
-        setTipoUsuario("empresa");
         router.push('/home/empresa');
       } else {
         alert("Usuário ou senha inválidos!");

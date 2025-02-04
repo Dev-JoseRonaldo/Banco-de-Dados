@@ -1,6 +1,7 @@
 'use client'
 
 import { useRouter } from 'next/navigation';
+import { JSX } from 'react';
 
 type CardProps = {
   label: string;
