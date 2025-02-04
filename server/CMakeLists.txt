@@ -10,14 +10,16 @@ find_package(OpenSSL REQUIRED)
 
 # Diretórios de inclusão
 include_directories(${CMAKE_SOURCE_DIR}/src)
-include_directories(${CMAKE_SOURCE_DIR}/src/vaga)
+include_directories(${CMAKE_SOURCE_DIR}/src/models)
+include_directories(${CMAKE_SOURCE_DIR}/src/models/vaga)
 include_directories(${CMAKE_SOURCE_DIR}/src/handlers)
+include_directories(${CMAKE_SOURCE_DIR}/src/handlers/vaga)
 
 # Arquivos fontes
 set(SOURCES
     src/main.cpp
-    src/vaga/Vaga.cpp
-    src/handlers/VagaHandlers.cpp
+    src/models/vaga/Vaga.cpp
+    src/handlers/vaga/VagaHandlers.cpp
 )
 
 # Criar o executável

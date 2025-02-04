@@ -4,7 +4,7 @@
 #include <vector>
 #include <mutex>
 #include <thread>
-#include "handlers/VagaHandlers.h"
+#include "handlers/vaga/VagaHandlers.h"
 
 using namespace web;
 using namespace web::http;

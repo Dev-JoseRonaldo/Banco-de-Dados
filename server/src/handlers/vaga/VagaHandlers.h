@@ -3,7 +3,7 @@
 
 #include <cpprest/http_listener.h>
 #include <cpprest/json.h>
-#include "vaga/Vaga.h"
+#include "models/vaga/Vaga.h"
 
 extern std::vector<Vaga> vagas;
 extern int next_id;
