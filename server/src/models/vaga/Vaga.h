@@ -4,9 +4,11 @@
 #include <cpprest/json.h>
 #include <string>
 
+// Declaração da classe
 class Vaga {
+// Atributos privados (encapsulamento)
 private:
-    int id;
+    int id; // Identificador único
     std::string titulo;
     std::string descricao;
     std::string empresa;

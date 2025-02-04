@@ -11,6 +11,7 @@ using namespace web::http;
 using namespace web::http::experimental::listener;
 
 int main() {
+    // Servidor Http
     http_listener listener(U("http://localhost:8080"));
 
     // Rota para criar uma vaga
@@ -41,12 +42,14 @@ int main() {
         }
     });
 
+    // Inicia o servidor
     try {
         listener
             .open()
             .then([]() { std::wcout << L"Servidor rodando em http://localhost:8080" << std::endl; })
             .wait();
 
+        // Loop para que o servidor fique sempre de pé
         while (true) {
             // Aguarda novas requisições
             std::this_thread::sleep_for(std::chrono::seconds(1));
